@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "Name": "Rocky Planets"
+  },
+  {
+    "Id": 2,
+    "Name": "Moon Tours"
+  },
+  {
+    "Id": 3,
+    "Name": "Gas Giants"
+  },
+  {
+    "Id": 4,
+    "Name": "Solar System"
+  }
+]

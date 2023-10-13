@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">This error comes from the server - not Angular</p>
+    <p>Next</p>
+    <ol>
+      <li>Check tab in chrome dev tools</li>
+      <li>Reproduce request in postman. If same error occurs, its not angular</li>
+    </ol>
+    <h5>Stack Trace</h5>
+    <code class="mt-5">{{error.details}}</code>
+  </ng-container>
+</div>

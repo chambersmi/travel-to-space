@@ -1,0 +1,14 @@
+<div class="bg-light px-4 py-3 text-uppercase fw-bold">
+  Order Summary
+</div>
+
+<div class="p-4">
+  <p class="fst-italic mb-4">Tickets will be stored in our system. You can request physical tickets at Delivery tab</p>
+  <ul class="list unstyled mb-4" *ngIf="(basketService.basketTotalSource$ | async) as totals">
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal</strong></li>
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong>{{totals.subtotal | currency}}</strong></li>
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong></li>
+    <li class="d-flex justify-content-between py-3 border-bottom"><strong>{{totals.total | currency}}</strong></li>
+
+  </ul>
+</div>

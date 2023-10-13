@@ -1,0 +1,26 @@
+<div class="container">
+<div class="row" *ngIf="product">
+  <div class="col-6">
+    <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="w-100">
+  </div>
+  <div class="col-6 mt-5">
+    <h2>{{product.name}}</h2>
+    <p>{{product.price | currency}}</p>
+
+    <h5 class="text-primary mb-3" *ngIf="quantityInBasket > 0">
+      You are currently traveling with {{quantityInBasket}} other passengers.
+    </h5>
+    <div class="d-flex justify-content-start align-items-center">
+      <h5># of Passengers </h5>
+      <i class="fa fa-minus-circle text-warning me-2 ms-5 myProduct" (click)="decrementQuantity()" ></i>
+      <span class="font-weight-bold additionalStyle">{{quantity}}</span>
+      <i class="fa fa-plus-circle text-warning ms-2 myProduct" (click)="incrementQuantity()"></i>
+
+      <button class="btn btn-outline-primary ms-4" (click)="updateBasket()" [disabled]="quantity===quantityInBasket">{{buttonText}}</button>
+    </div>
+    <div class="row mt-4">
+      <h4>Description</h4>
+      <p>{{product.description}}</p>
+    </div>
+  </div>
+</div>

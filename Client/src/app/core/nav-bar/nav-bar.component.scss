@@ -1,0 +1,58 @@
+
+.myLogo {
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.changeFont {
+    font-family: 'keepontruckin';
+}
+
+// .cart-no {
+//   position: absolute;
+//   min-height: 25px;
+//   min-width: 25px;
+//   border-radius: 50%;
+//   background:#5f7080;
+//   color: white;
+//   text-align: center;
+//   top: -12px;
+//   right: 22px;
+// }
+
+.empty-cart {
+  color: white;
+}
+.cart-no::before {
+  content: 'Packages in cart ';
+}
+
+.cart-no {
+  min-height: 10px;
+  min-width: 15px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  // top: 12px;
+  // right: 800px;
+}
+
+a {
+  text-decoration: none;
+  color: #9C5851;
+  margin-left: 30px;
+
+  &.active {
+    color: #588B7E;
+    border-bottom: 1px solid #5f7080;
+  }
+}
+
+a:hover {
+  color: #9C5851;
+}
+
+.styleDropdown {
+  cursor: pointer;
+}
+

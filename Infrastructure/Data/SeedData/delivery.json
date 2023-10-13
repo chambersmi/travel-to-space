@@ -1,0 +1,16 @@
+[
+    {
+      "Id": 1,
+      "ShortName": "Email",
+      "Description": "Tickets sent to your email address",
+      "DeliveryTime": "Instant",
+      "Price": 0
+    },
+    {
+      "Id": 2,
+      "ShortName": "UPS",
+      "Description": "Get physical tickets within 5 days",
+      "DeliveryTime": "2-5 Days",
+      "Price": 5
+    }
+  ]

@@ -1,0 +1,64 @@
+<header class="d-flex flex-row align-items-center justify-content-between p-3 px-4 mb-5
+    border-bottom fixed-top shadow-sm bg-dark navbar navbar-expand-lg">
+
+    <img src="../../../assets/images/cc-logo-small.jpg" alt="logo" class="myLogo" routerLink="/">
+    <nav class="my-2 text-uppercase fs-3 ">
+        <a class="p-2"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+        >Home</a>
+        <a class="p-2" routerLink="/shop" routerLinkActive="active">Find A Cruise</a>
+        <a class="p-2" routerLink="/basket" routerLinkActive="active">My Cruise</a>
+        <!-- <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+          {{getCount(basket.items)}}
+      </div> -->
+      <a class="p-2" routerLink="/testimonials" routerLinkActive="active">Testimonials</a>
+
+    </nav>
+    <div class="d-flex align-items-center">
+        <!-- <a routerLink="/basket" class="position-relative">
+            <i class="fa fa-solid fa-rocket fa-3x me-5 text-light"></i>
+            <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+                {{getCount(basket.items)}}
+            </div>
+          </a> -->
+
+        <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+          {{getCount(basket.items)}}
+      </div>
+
+        <ng-container *ngIf="(accountService.currentUser$ | async) === null">
+            <a routerLink="/account/login" class="btn btn-outline-secondary me-2">Login</a>
+            <a routerLink="/account/register" class="btn btn-outline-secondary me-3">Sign up</a>
+        </ng-container>
+
+        <ng-container *ngIf="accountService.currentUser$ | async as user">
+            <div class="dropdown ms-3 me-5 styleDropdown" dropdown>
+                <a dropdownToggle class="dropdown-toggle">
+                    <strong>Greetings {{user.displayName}}</strong>
+                </a>
+                <ul *dropdownMenu class="dropdown-menu dropdown-menu-right">
+                    <li class="py-1">
+                        <a routerLink="/basket" class="dropdown-item">
+                            <i class="fa fa-shopping-cart me-3"></i> View basket
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a routerLink="/orders" class="dropdown-item">
+                            <i class="fa fa-history me-3"></i> View orders
+                        </a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="py-1">
+                        <a (click)="accountService.logout()" class="dropdown-item">
+                            <i class="fa fa-sign-out me-3"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ng-container>
+</div>
+
+
+</header>

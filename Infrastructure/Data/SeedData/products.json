@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "Earth Orbit (6 hours)",
+    "Description": "Take a quick trip around Earth!",
+    "Price": 200,
+    "PictureUrl": "images/tours/earth_full.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Moon Orbit (48 hours)",
+    "Description": "Spend two days orbiting the moon and experience what puts the dark in the darkside of the moon while listening to Pink Floyds epic, Darkside of the Moon album!",
+    "Price": 900,
+    "PictureUrl": "images/tours/full_moon.jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Mars Orbit (1 week)",
+    "Description": "Orbit Mars and get upclose and personal with Deimos and Phobos",
+    "Price": 2100,
+    "PictureUrl": "images/tours/mars_orbit.jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Jupiter Moon Tour (6 months)",
+    "Description": "Orbit the biggest planet in our solar system with flybys of Ganymede, Io, Callisto and Europa!",
+    "Price": 3600,
+    "PictureUrl": "images/tours/jupiter_moons.jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Sizzle with Saturn (1 year)",
+    "Description": "See the dazzling rings of Saturn with a flyby of Titan!",
+    "Price": 3600,
+    "PictureUrl": "images/tours/saturn_orbit.jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Entire Solar Tour (2 years)",
+    "Description": "We will start with a flyby of Mercury and venture out to Neptune in this daring solar system journey! Warning: Possible death. Duration: 2 years - eternity",
+    "Price": 21000,
+    "PictureUrl": "images/tours/solar_system.jpg",
+    "ProductTypeId": 4,
+    "ProductBrandId": 5
+  }
+]
