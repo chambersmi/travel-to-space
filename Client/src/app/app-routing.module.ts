@@ -9,6 +9,7 @@ import { TestimonialsComponent } from './core/testimonials/testimonials.componen
 
 const routes: Routes = [
   {path: '', component: HomeComponent, data: {breadcrumb: 'Home'}, title: 'Celestial Cruise'},
+  {path: '/', component: HomeComponent, data: {breadcrumb: 'Home'}, title: 'Celestial Cruise'},
   {path: 'test-error', component: TestErrorComponent},
   {path: 'not-found', component: NotFoundComponent},
   {path: 'server-error', component: ServerErrorComponent},
