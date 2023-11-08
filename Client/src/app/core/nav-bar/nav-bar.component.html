@@ -13,20 +13,20 @@
         <!-- <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
           {{getCount(basket.items)}}
       </div> -->
-      <a class="p-2" routerLink="/testimonials" routerLinkActive="active">Testimonials</a>
+      <!-- <a class="p-2" routerLink="/testimonials" routerLinkActive="active">Testimonials</a> -->
 
     </nav>
     <div class="d-flex align-items-center">
-        <!-- <a routerLink="/basket" class="position-relative">
+        <a routerLink="/basket" class="position-relative">
             <i class="fa fa-solid fa-rocket fa-3x me-5 text-light"></i>
             <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
                 {{getCount(basket.items)}}
             </div>
-          </a> -->
-
+          </a>
+<!--
         <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
           {{getCount(basket.items)}}
-      </div>
+      </div> -->
 
         <ng-container *ngIf="(accountService.currentUser$ | async) === null">
             <a routerLink="/account/login" class="btn btn-outline-secondary me-2">Login</a>

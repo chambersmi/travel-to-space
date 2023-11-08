@@ -12,8 +12,7 @@ namespace Infrastructure.Data
 
     public class SpecificationEvaluator<TEntity> where TEntity : BaseEntity
     {
-        // Passing an TEntity as an IQueryable and calling it inputQuery
-        // #6 We can use DB Context to apply to the queries in the expression
+
         public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity> spec)
         {
             var query = inputQuery;
@@ -33,7 +32,7 @@ namespace Infrastructure.Data
                 query = query.OrderByDescending(spec.OrderByDescending);
             }
 
-            //Pagination - Ordering is important
+
             if(spec.IsPagingEnabled) {
                 query = query.Skip(spec.Skip).Take(spec.Take);
             }

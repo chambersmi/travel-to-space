@@ -11,7 +11,7 @@
           </select>
 
 
-          <h5 class="text-warning ms-3">Celestial Objects</h5>
+          <h5 class="selection-types ms-3">Celestial Objects</h5>
           <ul class="list-group my-3">
               <li class="list-group-item"
                   *ngFor="let brand of brands"
@@ -19,14 +19,14 @@
                   [value]="brand.id"
                   (click)="onBrandSelected(brand.id)">{{brand.name}}</li>
           </ul>
-          <h5 class="text-warning ms-3">Types</h5>
+          <!-- <h5 class="selection-types ms-3">Classification</h5>
           <ul class="list-group my-3">
               <li class="list-group-item"
                   *ngFor="let type of types"
                   [class.active]="type.id === shopParams.typeId"
                   [value]="type.id"
                   (click)="onTypeSelected(type.id)">{{type.name}}</li>
-          </ul>
+          </ul> -->
 
       </section>
       <section class="col-9">

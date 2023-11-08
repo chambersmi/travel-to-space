@@ -3,11 +3,8 @@ using Core.Entities;
 using Core.Interfaces;
 using Infrastructure.Data;
 
-//Creates DbContext instance and creates repositories as needed.
-// Example: UoW.Repository<Product>.Add(product)
-// Example: UoW.Repository<ProductBrand>.Add(productBrand)
-// Example: UoW.Complete();
 
+// Uses instance of DbContext to create repositories as needed
 namespace Infrastructure.Data
 {
     public class UnitOfWork : IUnitOfWork

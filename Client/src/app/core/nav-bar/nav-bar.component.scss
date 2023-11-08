@@ -23,8 +23,8 @@
 .empty-cart {
   color: white;
 }
-.cart-no::before {
-  content: 'Packages in cart ';
+.cart-no::after {
+  content: ' in cart';
 }
 
 .cart-no {
